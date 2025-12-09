@@ -9,7 +9,7 @@ def rec_dir_walk(path, collected):
             full_path = os.path.join(path, name)
             rec_dir_walk(full_path, collected)  # рекурсивный вызов для каждого вложенного элемента
 
-# Пример использования:
+# Пример:
 result = []
 rec_dir_walk("путь_к_папке", result)
 for item in result:
